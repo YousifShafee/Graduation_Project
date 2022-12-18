@@ -1,4 +1,3 @@
-![](logo.png)
 ## Recommender system graduation_project
 
 * * *
