@@ -1,7 +1,18 @@
 version: "3.9"
-   
+
 services:
-  back-end:
+  db:
+    image: mysql
+    volumes:
+      - /tmp/app/mysqld:/var/run/mysqld
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=book_web
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_HOST=localhost
+    ports:
+      - "33060:3306"
+  book-web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
