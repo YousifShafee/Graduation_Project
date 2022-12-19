@@ -1,0 +1,10 @@
+Django>=3.0,<4.0
+djangorestframework==3.13.1
+django_cron==0.6.0
+django_currentuser==0.5.3
+django_redis==5.2.0
+pandas==1.5.2
+scipy==1.9.3
+python_dotenv==0.21
+mysqlclient==2.1.1
+djangorestframework-jwt==1.11.0 
